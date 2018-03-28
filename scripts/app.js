@@ -172,6 +172,7 @@
 
         // Fetch the latest data.
         var request = new XMLHttpRequest();
+        console.log('request', request);
         request.onreadystatechange = function () {
             if (request.readyState === XMLHttpRequest.DONE) {
                 if (request.status === 200) {
@@ -279,7 +280,7 @@
     var initialWeatherForecast = {
         key: '2459115',
         label: 'New York, NY',
-        created: '2016-07-22T01:00:00Z',
+        created: '2016-06-22T01:00:00Z',
         channel: {
             astronomy: {
                 sunrise: "5:43 am",
@@ -288,13 +289,13 @@
             item: {
                 condition: {
                     text: "Windy",
-                    date: "Thu, 21 Jul 2016 09:00 PM EDT",
-                    temp: 56,
+                    date: "Thu, 21 Jun 2016 09:00 PM EDT",
+                    temp: 60,
                     code: 24
                 },
                 forecast: [
                     {code: 44, high: 86, low: 70},
-                    {code: 44, high: 94, low: 73},
+                    {code: 44, high: 98, low: 73},
                     {code: 4, high: 95, low: 78},
                     {code: 24, high: 75, low: 89},
                     {code: 24, high: 89, low: 77},
@@ -303,10 +304,10 @@
                 ]
             },
             atmosphere: {
-                humidity: 56
+                humidity: 60
             },
             wind: {
-                speed: 25,
+                speed: 50,
                 direction: 195
             }
         }
